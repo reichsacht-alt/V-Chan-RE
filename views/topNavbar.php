@@ -12,6 +12,7 @@
         <button class="dropbtn"><img src="<?php echo $_SESSION['user']['picture']['directory'] . $_SESSION['user']['picture']['image'] ?>" alt="" class="dropdownBtn"></button>
         <div class="dropdown-content">
           <a href="myProfile.php" class="navitem ace dditem ddlink">View Profile</a>
+          <a href="settings.php?type=none" class="navitem ace dditem ddlink">Settings</a>
           <?php if ($_SESSION['user']['confirmed'] == 0) { ?>
             <a href='userConfirmation.php' class="navitem ace dditem ddlink">Verification</a>
           <?php } ?>

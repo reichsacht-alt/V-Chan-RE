@@ -4,7 +4,7 @@ require_once "includes/config.php";
 
 // Verificar que el usuario haya iniciado sesión
 if (!isset($_SESSION['user'])) {
-    header("Location: posts.php");
+    header("Location: posts.php?pag=1&postperpage=10&tag=1");
     exit;
 }
 
