@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-06-2025 a las 04:59:36
--- Versión del servidor: 10.4.27-MariaDB
--- Versión de PHP: 8.1.12
+-- Tiempo de generación: 23-06-2026 a las 00:08:29
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -59,6 +59,21 @@ CREATE TABLE `posts` (
   `preview_path` varchar(18) NOT NULL DEFAULT 'img/posts/preview/',
   `nsfw` tinyint(1) NOT NULL DEFAULT 0,
   `up_date` datetime NOT NULL,
+  `dl_date` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `post_likes`
+--
+
+CREATE TABLE `post_likes` (
+  `id` int(11) NOT NULL,
+  `post_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `active` tinyint(1) NOT NULL,
+  `cr_date` datetime NOT NULL,
   `dl_date` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -130,8 +145,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `uid`, `username`, `password`, `email`, `code`, `confirmed`, `verified`, `cr_date`, `dl_date`) VALUES
 (1, 'UID000001', 'reichsacht', '$2y$10$xu96jYomZfEN9Nnr14HlkeuK5DzUMiZGIh95IPspZQurSrfEAx9ye', 'rechtenbann@gmail.com', 'REICHS', 1, 1, '2025-05-29 11:57:30', NULL),
-(2, 'UID000002', 'Ryuu', '$2y$10$3bwAp4z.63gm.dvat3m/COJPpZeU8QeadVPyum9Q7K79drSFsCxVy', 'hratzeld@gmail.com', 'KQ703A', 1, 0, '2025-05-30 13:31:58', NULL),
-(3, 'UID000003', 'reichsacht2', '$2y$10$NIh.jcy7nytxfzUJ8dZhsez7ZMNWpUK7jAQQRJPnPunJSNhLLNaNG', 'reichsacht2@gmail.com', 'HUX8EK', 0, 0, '2025-05-30 19:01:47', NULL);
+(2, 'UID000002', 'Ryuu', '$2y$10$3bwAp4z.63gm.dvat3m/COJPpZeU8QeadVPyum9Q7K79drSFsCxVy', 'hratzeld@gmail.com', 'HRTZLD', 1, 0, '2025-05-30 13:31:58', NULL),
+(3, 'UID000003', 'reichsacht2', '$2y$10$NIh.jcy7nytxfzUJ8dZhsez7ZMNWpUK7jAQQRJPnPunJSNhLLNaNG', 'reichsacht2@gmail.com', 'REACHT', 0, 0, '2025-05-30 19:01:47', NULL);
 
 --
 -- Índices para tablas volcadas
@@ -147,6 +162,12 @@ ALTER TABLE `accesslevel`
 -- Indices de la tabla `posts`
 --
 ALTER TABLE `posts`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `post_likes`
+--
+ALTER TABLE `post_likes`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -181,6 +202,12 @@ ALTER TABLE `accesslevel`
 -- AUTO_INCREMENT de la tabla `posts`
 --
 ALTER TABLE `posts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `post_likes`
+--
+ALTER TABLE `post_likes`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
