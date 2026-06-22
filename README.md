@@ -30,7 +30,7 @@
     </th>
   </tr>
 </table>
-# CURRENT ROADMAP
+# ROADMAP
 <h3>General</h3>
 <ul>
   <li>Add Profile Picture Update</li>
