@@ -30,6 +30,18 @@
     </th>
   </tr>
 </table>
+# CURRENT ROADMAP
+<h3>General</h3>
+<ul>
+  <li>Add Profile Picture Update</li>
+  <li>Add Community Tab (Threads/Conversations)</li>
+  <li>Add LN Section</li>
+  <li>Add Manga Section</li>
+</ul>
+<h3>Database</h3>
+<ul>
+  <li>Update Users (Add Last Login (Updates when log in or when log out))</li>
+</ul>
 <!--Here's a sentence with a footnote. [^1]
 [^1]: This is the footnote.
 # V-CHAN PROJECT (v2.1)
