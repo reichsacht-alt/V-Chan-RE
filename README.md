@@ -1,9 +1,22 @@
+# V-Chan
 
 <img src="https://raw.githubusercontent.com/reichsacht-alt/V-Chan-2.1/refs/heads/main/img/ui/vchan%20logo.svg" style="width:20rem;">
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-# DOWNLOADS
+<h1>ROADMAP</h1>
+<h3>General</h3>
+<ul>
+  <li>Add Profile Picture Update</li>
+  <li>Add Community Tab (Threads/Conversations)</li>
+  <li>Add LN Section</li>
+  <li>Add Manga Section</li>
+</ul>
+<h3>Database</h3>
+<ul>
+  <li>Update Users (Add Last Login (Updates when log in or when log out))</li>
+</ul>
+<h1>DOWNLOADS</h1>
 <h3>Download Files:</h3>
 
 <table>
@@ -30,18 +43,6 @@
     </th>
   </tr>
 </table>
-<h1>ROADMAP</h1>
-<h3>General</h3>
-<ul>
-  <li>Add Profile Picture Update</li>
-  <li>Add Community Tab (Threads/Conversations)</li>
-  <li>Add LN Section</li>
-  <li>Add Manga Section</li>
-</ul>
-<h3>Database</h3>
-<ul>
-  <li>Update Users (Add Last Login (Updates when log in or when log out))</li>
-</ul>
 <!--Here's a sentence with a footnote. [^1]
 [^1]: This is the footnote.
 # V-CHAN PROJECT (v2.1)
